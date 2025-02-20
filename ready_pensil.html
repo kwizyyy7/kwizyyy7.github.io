@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Рисовалка с расширенными функциями</title>
+   
+
+  </head>
+  <body>
+    <div class="tools">
+      <button class="color-btn black active" data-color="#000000"></button>
+      <button class="color-btn red" data-color="#ff0000"></button>
+      <button class="color-btn blue" data-color="#0000ff"></button>
+      <button class="color-btn green" data-color="#00ff00"></button>
+      <button class="color-btn eraser" title="Eraser">🧹</button>
+
+      <div class="size-control">
+        <input type="range" id="penSize" min="1" max="50" value="5" />
+        <span id="sizeDisplay">5</span>
+      </div>
+
+      <div class="opacity-control">
+        <input
+          type="range"
+          id="opacity"
+          min="0"
+          max="1"
+          step="0.01"
+          value="1"
+        />
+        <span id="opacityDisplay">100%</span>
+      </div>
+
+      <button class="action-btn" id="undoBtn" title="Undo">↩️ Отмена</button>
+      <button class="action-btn" id="clearBtn" title="Clear">
+        ❌ Очистить
+      </button>
+    </div>
+
+    <canvas id="drawingCanvas" width="1500" height="800"></canvas>
+    <link rel="stylesheet" href="УРОК16.css">
+    <script src="УРОК16.js" defer></script>
+  </body>
+</html>
